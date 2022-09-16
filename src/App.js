@@ -4,12 +4,12 @@ import SideContentText from './constants/sideContentText';
 function App() {
   return (
     <div className="App">
-      <div className="blank">
+      {/* <div className="blank">
         {SideContentText}
       </div>
       <div className="blank1">
       {SideContentText}
-      </div>
+      </div> */}
       <div className="space"></div>
       <div className="content">
         <Feed />

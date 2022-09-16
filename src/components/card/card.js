@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import "./card.css";
 import Logo from "../../assets/my.jpg";
 import up from "../../assets/up.png";
@@ -12,7 +12,7 @@ const Card = ({item}) => {
   return (
     <div className="card">
       <div className="cardBox">
-        <Avatar path={Logo} />
+        <Avatar path={Logo} size={60} />
         <div className="gap">
           <a
             href=""
@@ -37,7 +37,7 @@ const Card = ({item}) => {
         <p className="title">
           {item.question}
         </p>
-        <p  className='para'>{item.answer}</p>
+        <spam  className='para'>{item.answer}</spam>
       </div>
       <Footer up={up} down={down} share={share} chat={chat}/>
     </div>

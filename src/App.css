@@ -1,9 +1,45 @@
 .App {
   display: flex;
+  justify-content: center;
 }
-.blank{
-  flex:2;
+
+.blank {
+  flex: 2;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  margin-left: 4%;
+  width: 20%;
 }
-.content{
-  flex:3;
+
+.blank1 {
+  flex: 2;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  margin-right: 4%;
+  width: 20%;
+}
+
+.content {
+  flex: 4;
+}
+
+.space {
+  flex: 2
+}
+
+@media only screen and (max-width: 600px) {
+  .blank {
+    visibility: hidden;
+  }
+
+  .blank1 {
+    visibility: hidden;
+  }
+  .space {
+    flex: 0
+  }
 }

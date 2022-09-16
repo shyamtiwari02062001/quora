@@ -7,12 +7,13 @@ import down from "../../assets/down.png";
 import share from "../../assets/share.png";
 import chat from "../../assets/chat.png";
 import Avatar from "../Avatar/avatar";
+import Footer from "../footer/Footer";
 const Card = ({item}) => {
   return (
     <div className="card">
       <div className="cardBox">
         <Avatar path={Logo} />
-        <div className="header">
+        <div className="gap">
           <a
             href=""
            className="link"
@@ -27,23 +28,18 @@ const Card = ({item}) => {
             Follow
           </a>
           <br />
-          <small className="header">
+          <small className="gap">
            {item.designation}
           </small>
         </div>
       </div>
-      <div className="header">
+      <div className="gap">
         <p className="title">
           {item.question}
         </p>
         <p  className='para'>{item.answer}</p>
       </div>
-      <div className="cardBox">
-       <img alt="" style={{marginLeft:10,marginRight:10}} className='image' src={up}/>
-       <img alt=""style={{marginLeft:10,marginRight:10}} className='image'src={down}/>
-       <img alt=""style={{marginLeft:10,marginRight:10}} className='image'src={share}/>
-       <img alt=""style={{marginLeft:10,marginRight:10}} className='image'src={chat}/>
-      </div>
+      <Footer up={up} down={down} share={share} chat={chat}/>
     </div>
   );
 };
